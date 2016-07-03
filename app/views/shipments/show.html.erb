@@ -1,0 +1,70 @@
+<section id="inner-headline">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <ul class="breadcrumb">
+        <li><a href="#"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+        <li><a href="#">Features</a><i class="icon-angle-right"></i></li>
+        <li class="active">My Shipments</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<section id="content">
+<div class="container">
+  <div class="row">
+          <div class="col-lg-4">
+              <div class="well">
+                  <h3 class="text-center widgetheading"><%= @shipment.first_name + @shipment.last_name %> </h3><br />
+                  <address class="text-center">
+                      <p class="text-center">Package From</p>
+                      <strong>
+                  Billing Address: <%= @shipment.billing_address1 %><br />
+                  Country:  <%= @shipment.billing_address2 %><br />
+                  Mobile Number: <%= @shipment.phone_number %> <br />
+                    </strong>
+                  </address>
+
+              </div>
+              </div>
+
+              <div class="col-lg-4">
+                  <!---to a  through and fro arrow-->
+                  <h3 class="text-center"><%= fa_icon "arrow-left" %><%= fa_icon "arrow-right" %></h3>
+              </div>
+
+              <div class="col-lg-4">
+                  <div class="well">
+                      <h3 class="text-center widgetheading">
+                          <%= @shipment.delivery_address_first_name + @shipment.delivery_address_last_name %>
+                      </h3><br />
+                      <address class="text-center">
+                        <strong>
+                         <p class="text-center">Shipping To</p>
+                          Delivery Address: <%= @shipment.delivery_address %><br />
+                          Zip-code: <%= @shipment.postcode %> <br />
+                          Recievers E-mail: <%= @shiment.e_mail %><br />
+                          
+                      </address>
+                  </div>
+              </div>
+          </div>
+    </div>
+      <hr />
+
+      <!----- panel for responsive dynamic addres  comments in ruby in other to keep changing locations -->
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h2 class="text-left">
+                      Track your Shipments
+                  </h2>
+                  <div class="panel">
+                      <div class="well">
+                      <div class="panel-body"><h2><!-- table for shipments destination inserted here  "Ruby"-->SHipments</h2>
+                          </div>
+                  </div>
+              </div>
+          </div>
+</div>
