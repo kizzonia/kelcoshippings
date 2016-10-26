@@ -17,7 +17,6 @@ gem 'momentjs-rails'
 # gem 'therubyracer', platforms: :ruby
 gem 'sprockets'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-gem "font-awesome-rails"
 gem "simple_form"
 
 gem 'devise', '3.4.1'
