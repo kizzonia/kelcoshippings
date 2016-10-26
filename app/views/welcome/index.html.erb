@@ -56,7 +56,7 @@ Value added services
 			<div class="col-lg-12">
 				<div class="big-cta">
 					<div class="cta-text">
-						<h2><span>Please Login </span> to track your shipments <span><a href="" class="btn btn-theme btn-lg" >LOGIN</a></span></h2>
+						<h4><span>Please Login </span> to track your shipments <span><%= link_to "Login", new_user_session_path, class: "btn btn-theme btn-lg" %></span></h4>
 					</div>
 				</div>
 			</div>
@@ -169,7 +169,7 @@ Value added services
 						<% end %>
        <% end %>
 	<!-- Thumb Image and Description -->
-   <%= image_tag "ser1.jpg", class: "img",  alt: "KSC’s Crew Logistics Services is an outsourcing product designed to streamline and improve the crew transfer process. Today, SSC provides this service to more than 25 shipmanagers and owners, channelling all requirements through our 24/7 Vessel Supply Chain Hub which then coordinates with our dedicated and global network of husbandry agents to deliver a consistent level of care and attention to all crew throughout their transfer process. In addition to the traditional outsourcing benefits such as efficiency gains and the ability to re-focus on core activities, our customers experience improved crew welfare, direct cost savings through standard fixed tariffs, improved risk management through our ISO accredited HSSE and QA procedures, greater visibility on crew movements, analytical management reports and predictable budget costs, all delivered through a single, dedicated Hub." %>
+   <%= image_tag "ser1.jpg", style: "height:150px;", class: "img",  alt: "KSC’s Crew Logistics Services is an outsourcing product designed to streamline and improve the crew transfer process. Today, SSC provides this service to more than 25 shipmanagers and owners, channelling all requirements through our 24/7 Vessel Supply Chain Hub which then coordinates with our dedicated and global network of husbandry agents to deliver a consistent level of care and attention to all crew throughout their transfer process. In addition to the traditional outsourcing benefits such as efficiency gains and the ability to re-focus on core activities, our customers experience improved crew welfare, direct cost savings through standard fixed tariffs, improved risk management through our ISO accredited HSSE and QA procedures, greater visibility on crew movements, analytical management reports and predictable budget costs, all delivered through a single, dedicated Hub." %>
 
 
 
@@ -179,8 +179,8 @@ Value added services
 						<!-- Item Project and Filter Name -->
 						<li class="item-thumbs col-lg-3 design size" data-id="id-1" data-type="icon">
 						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-						<%=link_to "ser2.jpg", class:"hover-wrap" do %>
-						<%= image_tag "ser2.jpg", class: " fancybox", title: "Global Marine Transport", alt: "KSC Global Marine Travel (GMT)
+						<%=link_to "ser5.jpg", class:"hover-wrap" do %>
+						<%= image_tag "ser5.jpg", class: " fancybox", title: "Global Marine Transport", alt: "KSC Global Marine Travel (GMT)
 In May 2010 Kelco Shipping Co.   acquired Global Marine Travel LLC and Interargo PH. Together we have rebranded Global Marine Travel and Interargo to become SSC GMT.
 Our new partnership brings together the strong values of all three companies and will give us the ability to provide unmatched value added services to the maritime community such as a unique door-to-deck transportation service combined with airline ticketing and travel monitoring." do %>
 						<span class="overlay-img"></span>
@@ -188,7 +188,7 @@ Our new partnership brings together the strong values of all three companies and
 						<% end %>
 			 <% end %>
 	<!-- Thumb Image and Description -->
-	 <%= image_tag "ser2.jpg", class: "img", alt: "KSC Global Marine Travel (GMT)
+	 <%= image_tag "ser5.jpg", style: "height:150px;", class: "img", alt: "KSC Global Marine Travel (GMT)
 In May 2010 Kelco Shipping Co.   acquired Global Marine Travel LLC and Interargo PH. Together we have rebranded Global Marine Travel and Interargo to become SSC GMT.
 Our new partnership brings together the strong values of all three companies and will give us the ability to provide unmatched value added services to the maritime community such as a unique door-to-deck transportation service combined with airline ticketing and travel monitoring." %>
 
@@ -213,7 +213,7 @@ We are constantly striving to improve on how we do business and communicate with
 						<% end %>
 			 <% end %>
 						<!-- Thumb Image and Description -->
-						<%= image_tag "ser3.jpg", class: "img", alt: "Operating from major ports and airports worldwide, SSC Cargo Services offers value for money, maximum flexibility and consistency of service.
+						<%= image_tag "ser3.jpg", style: "height:150px;", class: "img", alt: "Operating from major ports and airports worldwide, SSC Cargo Services offers value for money, maximum flexibility and consistency of service.
 We are well versed in all concepts of the freight forwarding industry and offer a comprehensive range of services including:
 International freight forwarding
 Project forwarding
@@ -240,7 +240,7 @@ We are constantly striving to improve on how we do business and communicate with
 						<% end %>
 			 <% end %>
 						<!-- Thumb Image and Description -->
-						<%= image_tag "ser4.jpg", class: "img", alt: "To reach the highest standards we depend on our people
+						<%= image_tag "ser4.jpg", style: "height:150px;", class: "img", alt: "To reach the highest standards we depend on our people
 
 1.Their welfare, training and expertise is core to our success.welfare, training
 2.Our foundation for developing our people is securely anchored in health and safety policies.

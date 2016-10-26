@@ -10,6 +10,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 gem 'nifty-attachments', '~> 1.0', '>= 1.0.4'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -17,10 +19,14 @@ gem 'sprockets'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem "font-awesome-rails"
 gem "simple_form"
-gem 'devise'
+
+gem 'devise', '3.4.1'
+
+gem 'cancancan'
+
 gem 'ratyrate'
 gem 'paperclip'
-gem 'activeadmin', '1.0.0.pre1' 
+gem 'activeadmin', '1.0.0.pre1'
 gem "bcrypt", :require => "bcrypt"
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

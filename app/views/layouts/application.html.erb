@@ -24,12 +24,16 @@
                       <ul class="nav navbar-nav">
                           <li><%= link_to "K-Ship", root_path  %></li>
                           <li>
-                              <%=link_to "My Shipments", shipments_path  %>
+                              <%= link_to "My Shipments ", shipments_path %>
+
 
                           </li>
                           <% if user_signed_in? %>
-                            <li><%= link_to "Create Shipments", new_shipment_path %></li>
-                            <li><%= link_to fa_icon{"sign-out"}, destroy_user_sessions_path, method: :delete %>
+
+                          <li><%= link_to destroy_user_session_path(@user),:method => :delete do  %>
+                            <%= fa_icon "sign-out" %>
+                            sign-out
+                            <% end %>
                           <% else %>
                           <li><a href="#projects">Our Services</a></li>
 
@@ -40,8 +44,8 @@
               </div>
           </div>
   	</header>
-    <p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+  <br>
+</br >
 <%= yield %>
 <footer>
 <div class="container">

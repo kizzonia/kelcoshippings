@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
-  devise_for :users
-   resources :shipments
 
-
+devise_for :users
+  ActiveAdmin.routes(self)
+   resources :shipments do
+     resources :comments
+   end
 
    root 'welcome#index'
 

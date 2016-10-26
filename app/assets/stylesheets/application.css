@@ -15,13 +15,16 @@
  *= require_self
  *= require flexslider
  */
+ @import "234";
+ @import "bootstrap-theme";
+ @import "bootstrap-table";
  @import "bootstrap";
-  @import "flexslider";
+ @import "flexslider";
  @import "responsive";
  @import "font-awesome";
  @import "animate";
  @import "style";
  @import "default";
- @import "overwrite";
  @import "jquery.fancybox";
-  @import "flexslider";
+ @import "flexslider";
+ @import "overwrite";

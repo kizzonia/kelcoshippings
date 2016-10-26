@@ -1,0 +1,5 @@
+<%= simple_form_for( [@shipment, @shipment.comments.build(params[:shipment_id])] ) do |f| %>
+<%= f.input :status, placeholder: "Enter the delivery status of the current shipment" %>
+<%= f.input :location, as: :text, :row => 25, :cols => 16, placeholder: "Enter the Package current Location" %>
+<%= f.submit :submit, class: "btn btn-lg btn-success" %>
+<% end %>

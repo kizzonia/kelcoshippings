@@ -1,0 +1,159 @@
+<div class="container-fluid">
+<div class="row">
+<div id="sidebar-collapse" class="col-sm-3 span4 sidebar">
+  <form role="search">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search">
+    </div>
+  </form>
+  <ul class="nav menu">
+    <li class="active" ><%= link_to shipments_path do %>
+       <svg class="glyph stroked dashboard-dial">
+         <use xlink:href="#stroked-dashboard-dial">
+         </use>
+       </svg>
+       Your Shipments
+       <% end %>
+     </li>
+      <li ><%= link_to shipments_path(@shipment) do %>
+      <svg class="glyph stroked calendar">
+        <use xlink:href="#stroked-calendar">
+        </use>
+      </svg>
+       Track Shipment
+       <% end %>
+     </li>
+       <li><%= link_to new_shipment_path(@shipment) do %>
+            <svg class="glyph stroked pencil">
+              <use xlink:href="#stroked-pencil">
+              </use>
+            </svg>
+            Order Shipment
+      <% end %>
+    </li>
+
+
+    <li><a href="panels.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Customer Care </a></li>
+    <li><a href="icons.html"><svg class="glyph stroked star"><use xlink:href="#stroked-star"></use></svg> Profile</a></li>
+
+  </ul>
+</br >
+</br>
+</br >
+</br ></br >
+</br>
+</br >
+</br ></br >
+</br>
+</br >
+</br ></br >
+</br>
+</br >
+</br >
+</div><!--/.sidebar-->
+
+<!---items in panels ----->
+
+
+    <div class="span8 col-md-offset-4">
+        <% @shipments.each do |shipment| %>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          Ordered Deliveries
+        </div>
+          <div class="panel-body">
+            <div class="col-md-12">
+              <div class="page-header"> Current deliveries </div>
+              <table class=" table table-striped">
+                <thead>
+                  <tr class="text-center">
+                <th> Shipment Details </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Name:
+                    </td>
+                      <td>
+                        <%= shipment.first_name  + shipment.last_name %>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Weight Of Shipment:
+                      </td>
+                      <td>
+                        <%= shipment.quntity %>
+                    </td>
+                    <tr>
+                      <td>
+                        Paid  Shipping Tax :
+                      </td>
+                      <td>
+                        <%= shipment.tax %>
+                      </td>
+                      <tr>
+                        <td>
+                          E-mail:
+                        </td>
+                        <td>
+                          <%= shipment.e_mail %>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </br>
+                <div class="col-md-4 col-md-offset-8"> <%= link_to "Track Your Shipment", shipment, class: "btn btn-success btn-lg" %></div>
+
+              </div>
+
+
+            </div>
+
+
+            <% end %>
+
+          </br >
+          </br>
+          </br ></br >
+          </br>
+          </br ></br >
+          </br>
+          </br >
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </br >
+  </br >
+    </br>
+</br >
+</br >
+</br >
+</br>
+</br >
+</br >
+</br >
+</br>
+</br >
+</br >
+</br >
+</br>
+</br >
+</br >

@@ -30,3 +30,5 @@
 //= require setting
 //= require validate
 //= require_tree .
+//= require bootstrap-table
+//= require bootstrap-datepicker

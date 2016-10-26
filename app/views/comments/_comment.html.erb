@@ -1,0 +1,15 @@
+<table class="table table-striped fixed-table-container">
+      <tbody class="fixed-table-body">
+        <tr>
+          <td>
+            <%= time_ago_in_words(comment.created_at) %> Ago
+          </td>
+          <td class="text-center">
+            <%= comment.status %>
+          </td>
+          <td class="text-center">
+            <%= comment.location %>
+          </td>
+        </tr>
+      </tbody>
+    </table>
