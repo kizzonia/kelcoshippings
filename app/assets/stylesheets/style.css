@@ -137,7 +137,7 @@ header .navbar {
 }
 
 
-header .navbar-collapse ul.navbar-nav {
+header .navbar-collapse ul .navbar-nav {
     float: right;
     margin-right: 0;
 }
@@ -150,10 +150,10 @@ header .nav li a:hover,
 header .nav li a:focus,
 header .nav li.active a,
 header .nav li.active a:hover,
-header .nav li a.dropdown-toggle:hover,
-header .nav li a.dropdown-toggle:focus,
-header .nav li.active ul.dropdown-menu li a:hover,
-header .nav li.active ul.dropdown-menu li.active a {
+header .nav li a .dropdown-toggle:hover,
+header .nav li a .dropdown-toggle:focus,
+header .nav li.active ul .dropdown-menu li a:hover,
+header .nav li.active ul .dropdown-menu li.active a {
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -288,7 +288,7 @@ header ul.nav li {
 
 }
 
-header ul.nav li ul {
+header ul .nav li ul {
     margin-top: 1px;
 }
 
